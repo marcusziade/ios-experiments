@@ -43,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A0A231726D7AE9D001C50AB /* UIColorPickers */ = {
+			isa = PBXGroup;
+			children = (
+				5A34336526D7A8E200241412 /* View Controllers */,
+			);
+			path = UIColorPickers;
+			sourceTree = "<group>";
+		};
 		5A34333E26D7A6A800241412 = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +72,7 @@
 			children = (
 				5A34334A26D7A6A800241412 /* AppDelegate.swift */,
 				5A34334C26D7A6A800241412 /* SceneDelegate.swift */,
-				5A34336526D7A8E200241412 /* View Controllers */,
+				5A0A231726D7AE9D001C50AB /* UIColorPickers */,
 				5A34335E26D7A70000241412 /* Extensions */,
 				5A34336826D7A98300241412 /* Supporting Files */,
 				5A34335226D7A6A900241412 /* Preview Content */,
