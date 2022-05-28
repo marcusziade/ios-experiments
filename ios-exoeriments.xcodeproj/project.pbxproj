@@ -16,6 +16,8 @@
 		5A34336226D7A7AA00241412 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34336126D7A7AA00241412 /* UIViewExtensions.swift */; };
 		5A34336426D7A7C200241412 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34336326D7A7C200241412 /* UIViewControllerExtensions.swift */; };
 		5A34336726D7A90400241412 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34336626D7A90400241412 /* ProfileEditViewController.swift */; };
+		5AB2BDF02842445B003FF4E9 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2BDEF2842445B003FF4E9 /* TestView.swift */; };
+		5AB2BDF228424464003FF4E9 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2BDF128424464003FF4E9 /* TestVC.swift */; };
 		5AFA71EB27539C47008DF019 /* SmartListPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA71EA27539C47008DF019 /* SmartListPrototype.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		5A34336126D7A7AA00241412 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		5A34336326D7A7C200241412 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		5A34336626D7A90400241412 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		5AB2BDEF2842445B003FF4E9 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		5AB2BDF128424464003FF4E9 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		5AFA71EA27539C47008DF019 /* SmartListPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListPrototype.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +80,7 @@
 				5A34334C26D7A6A800241412 /* SceneDelegate.swift */,
 				5A0A231726D7AE9D001C50AB /* UIColorPickers */,
 				5AFA71E927539C2E008DF019 /* SettingsList */,
+				5AB2BDEE28424446003FF4E9 /* SwiftUI+UIKit */,
 				5A34335E26D7A70000241412 /* Extensions */,
 				5A34336826D7A98300241412 /* Supporting Files */,
 				5A34335226D7A6A900241412 /* Preview Content */,
@@ -117,6 +122,15 @@
 				5A34335826D7A6A900241412 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AB2BDEE28424446003FF4E9 /* SwiftUI+UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5AB2BDF128424464003FF4E9 /* TestVC.swift */,
+				5AB2BDEF2842445B003FF4E9 /* TestView.swift */,
+			);
+			path = "SwiftUI+UIKit";
 			sourceTree = "<group>";
 		};
 		5AFA71E927539C2E008DF019 /* SettingsList */ = {
@@ -201,8 +215,10 @@
 				5A34336726D7A90400241412 /* ProfileEditViewController.swift in Sources */,
 				5A34336226D7A7AA00241412 /* UIViewExtensions.swift in Sources */,
 				5A34334D26D7A6A800241412 /* SceneDelegate.swift in Sources */,
+				5AB2BDF02842445B003FF4E9 /* TestView.swift in Sources */,
 				5AFA71EB27539C47008DF019 /* SmartListPrototype.swift in Sources */,
 				5A34336026D7A78E00241412 /* LivePreview.swift in Sources */,
+				5AB2BDF228424464003FF4E9 /* TestVC.swift in Sources */,
 				5A34336426D7A7C200241412 /* UIViewControllerExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
