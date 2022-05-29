@@ -26,6 +26,7 @@ final class ProfileEditViewController: ViewController {
 
     private lazy var colorButton = UIColorWell()
         .configure {
+            $0.translatesAutoresizingMaskIntoConstraints = false
             $0.supportsAlpha = false
             $0.addTarget(self, action: #selector(onColorWellChanged), for: .valueChanged)
             $0.backgroundColor = .white

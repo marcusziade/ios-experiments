@@ -33,7 +33,7 @@ enum ShowcaseFeature: CaseIterable {
         case .swiftUIPlusUIKit:
             return TestVC()
         case .stickyHeader:
-            return ViewController()
+            return StickyHeaderVC()
         }
     }
 }
