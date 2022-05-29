@@ -5,9 +5,10 @@
 //  Created by Marcus Ziadé on 26.8.2021.
 //
 
+import Foundation
 import UIKit
 
-class ProfileEditViewController: UIViewController {
+final class ProfileEditViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +24,12 @@ class ProfileEditViewController: UIViewController {
 
     // MARK: - Private
 
-    private lazy var colorButton: UIColorWell = {
-        let button = UIColorWell().forAutoLayout()
-        button.supportsAlpha = false
-//        button.setTitle("Choose color", for: .normal)
-//        button.setTitleColor(.white, for: .normal)
-        button.addTarget(self, action: #selector(onColorWellChanged), for: .valueChanged)
-        button.backgroundColor = .white
-        return button
-    }()
+    private lazy var colorButton = UIColorWell()
+        .configure {
+            $0.supportsAlpha = false
+            $0.addTarget(self, action: #selector(onColorWellChanged), for: .valueChanged)
+            $0.backgroundColor = .white
+        }
 
     @objc private func onColorWellChanged() {
         let colorName = colorButton.selectedColor?.accessibilityName ?? "None"
@@ -40,21 +38,21 @@ class ProfileEditViewController: UIViewController {
         view.backgroundColor = colorButton.selectedColor
     }
 
-//    @objc private func openColorPicker() {
-//        let colorPicker = UIColorPickerViewController()
-//        present(colorPicker, animated: true)
-//    }
+    //    @objc private func openColorPicker() {
+    //        let colorPicker = UIColorPickerViewController()
+    //        present(colorPicker, animated: true)
+    //    }
 }
 
 #if DEBUG
 
-import SwiftUI
+    import SwiftUI
 
-struct ProfileEditViewController_Preview: PreviewProvider {
-    static var previews: some View = Preview(
-        for: ProfileEditViewController()
-    )
-    .preferredColorScheme(.dark)
-}
+    struct ProfileEditViewController_Preview: PreviewProvider {
+        static var previews: some View = Preview(
+            for: ProfileEditViewController()
+        )
+        .preferredColorScheme(.dark)
+    }
 
 #endif

@@ -13,13 +13,13 @@ struct SmartListPrototype: View {
             Section {
                 Toggle("Smart shortcuts", isOn: .constant(true))
             }
-            
+
             Section("Active") {
                 ForEach(0..<3) { item in
                     Text("Active option \(item)")
                 }
             }
-            
+
             Section {
                 ForEach(0..<6) { item in
                     Text("Option \(item)")

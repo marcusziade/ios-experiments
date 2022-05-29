@@ -8,9 +8,11 @@ struct TestView: View {
 
 struct TestView2: View {
 
-    var onSiikaPressed: (() -> ())?
+    var onSiikaPressed: (() -> Void)?
     var body: some View {
-        Button { onSiikaPressed?() } label: {
+        Button {
+            onSiikaPressed?()
+        } label: {
             Text("Siika")
         }
     }

@@ -1,6 +1,6 @@
+import Foundation
 import SwiftUI
 
-/// Enables Xcode livePreview in UIKit
 struct Preview: View {
 
     enum NavigationController {
@@ -10,7 +10,9 @@ struct Preview: View {
 
     let body: AnyView
 
-    init(for viewController: UIViewController, navigationControllerStyle: NavigationController = .none) {
+    init(
+        for viewController: UIViewController, navigationControllerStyle: NavigationController = .none
+    ) {
         let preview = PreviewController(for: viewController)
 
         switch navigationControllerStyle {
@@ -21,7 +23,9 @@ struct Preview: View {
         }
     }
 
-    init(for view: UIView) {
+    init(
+        for view: UIView
+    ) {
         body = AnyView(erasing: PreviewView(for: view))
     }
 }
@@ -30,7 +34,9 @@ private struct PreviewController<ViewControllerType: UIViewController>: UIViewCo
 
     let viewController: ViewControllerType
 
-    init(for viewController: ViewControllerType) {
+    init(
+        for viewController: ViewControllerType
+    ) {
         self.viewController = viewController
     }
 
@@ -50,7 +56,9 @@ private struct PreviewView<ViewType: UIView>: UIViewRepresentable {
 
     let view: ViewType
 
-    init(for view: ViewType) {
+    init(
+        for view: ViewType
+    ) {
         self.view = view
     }
 

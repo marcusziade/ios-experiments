@@ -1,8 +1,8 @@
 import Foundation
-import UIKit
 import SwiftUI
+import UIKit
 
-final class TestVC: UIViewController {
+final class TestVC: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -12,7 +12,7 @@ final class TestVC: UIViewController {
         stackView.axis = .vertical
         view.addSubview(stackView)
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: view.topAnchor),
+            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])

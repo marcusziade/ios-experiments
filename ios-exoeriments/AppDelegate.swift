@@ -5,15 +5,15 @@
 //  Created by Marcus Ziadé on 26.8.2021.
 //
 
+import Foundation
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(
         _ application: UIApplication,
-        didFinishLaunchingWithOptions
-            launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         return true
     }
