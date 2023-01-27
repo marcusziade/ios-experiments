@@ -1,10 +1,3 @@
-//
-//  SmartListPrototype.swift
-//  ios-exoeriments
-//
-//  Created by Marcus Ziadé on 28.11.2021.
-//
-
 import SwiftUI
 
 struct SmartListPrototype: View {
@@ -35,3 +28,5 @@ struct SmartListPrototype_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
+
+

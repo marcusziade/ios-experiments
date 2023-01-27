@@ -1,10 +1,3 @@
-//
-//  StickyHeaderVC.swift
-//  ios-exoeriments
-//
-//  Created by Marcus Ziadé on 29.5.2022.
-//
-
 import Foundation
 import UIKit
 
@@ -107,3 +100,5 @@ extension StickyHeaderVC: UIScrollViewDelegate {
 // MARK: - UITableViewDelegate
 
 extension StickyHeaderVC: UITableViewDelegate {}
+
+

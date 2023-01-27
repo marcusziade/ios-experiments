@@ -1,10 +1,3 @@
-//
-//  StickyHeaderImageView.swift
-//  ios-exoeriments
-//
-//  Created by Marcus Ziadé on 29.5.2022.
-//
-
 import Foundation
 import UIKit
 
@@ -37,3 +30,5 @@ final class StickyHeaderImageView: UIView {
             $0.clipsToBounds = true
         }
 }
+
+

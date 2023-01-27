@@ -1,10 +1,3 @@
-//
-//  ProfileEditViewController.swift
-//  ios-exoeriments
-//
-//  Created by Marcus Ziadé on 26.8.2021.
-//
-
 import Foundation
 import UIKit
 
@@ -57,3 +50,5 @@ final class ProfileEditViewController: ViewController {
     }
 
 #endif
+
+
