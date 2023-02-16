@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 enum ShowcaseFeature: CaseIterable {
-    case colorPicker, settingsList, swiftUIPlusUIKit, stickyHeader
+    case colorPicker, settingsList, swiftUIPlusUIKit, stickyHeader, swipeVCs
 
     var title: String {
         switch self {
@@ -14,6 +14,8 @@ enum ShowcaseFeature: CaseIterable {
             return "SwiftUI UIKit Interoperability"
         case .stickyHeader:
             return "Sticky header"
+        case .swipeVCs:
+            return "Swipe ViewControllers"
         }
     }
 
@@ -27,6 +29,8 @@ enum ShowcaseFeature: CaseIterable {
             return TestVC()
         case .stickyHeader:
             return StickyHeaderVC()
+        case .swipeVCs:
+            return ContainerViewController()
         }
     }
 }

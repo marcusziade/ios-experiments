@@ -29,6 +29,7 @@
 		5A34336726D7A90400241412 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34336626D7A90400241412 /* ProfileEditViewController.swift */; };
 		5AB2BDF02842445B003FF4E9 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2BDEF2842445B003FF4E9 /* TestView.swift */; };
 		5AB2BDF228424464003FF4E9 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2BDF128424464003FF4E9 /* TestVC.swift */; };
+		5AE63803299E228F000C31B5 /* SwipeableVCsContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE63802299E228F000C31B5 /* SwipeableVCsContainerVC.swift */; };
 		5AFA71EB27539C47008DF019 /* SmartListPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA71EA27539C47008DF019 /* SmartListPrototype.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		5A34336626D7A90400241412 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		5AB2BDEF2842445B003FF4E9 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		5AB2BDF128424464003FF4E9 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		5AE63802299E228F000C31B5 /* SwipeableVCsContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableVCsContainerVC.swift; sourceTree = "<group>"; };
 		5AFA71EA27539C47008DF019 /* SmartListPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListPrototype.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				5A34334A26D7A6A800241412 /* AppDelegate.swift */,
 				5A34334C26D7A6A800241412 /* SceneDelegate.swift */,
 				5A008FAF28435BCD00DB1BEA /* ShowcaseVC.swift */,
+				5AE63801299E226E000C31B5 /* SwipeViewControllers */,
 				5A008FC928435DA100DB1BEA /* Models */,
 				5A0A231726D7AE9D001C50AB /* UIColorPickers */,
 				5AFA71E927539C2E008DF019 /* SettingsList */,
@@ -188,6 +191,14 @@
 				5AB2BDEF2842445B003FF4E9 /* TestView.swift */,
 			);
 			path = "SwiftUI+UIKit";
+			sourceTree = "<group>";
+		};
+		5AE63801299E226E000C31B5 /* SwipeViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5AE63802299E228F000C31B5 /* SwipeableVCsContainerVC.swift */,
+			);
+			path = SwipeViewControllers;
 			sourceTree = "<group>";
 		};
 		5AFA71E927539C2E008DF019 /* SettingsList */ = {
@@ -285,6 +296,7 @@
 				5AFA71EB27539C47008DF019 /* SmartListPrototype.swift in Sources */,
 				5A008FCB28435DC000DB1BEA /* ShowcaseFeature.swift in Sources */,
 				5A008FC828435D6700DB1BEA /* NavigationController.swift in Sources */,
+				5AE63803299E228F000C31B5 /* SwipeableVCsContainerVC.swift in Sources */,
 				5A008FC028435C3800DB1BEA /* UIImage+Ext.swift in Sources */,
 				5A008FBC28435C3800DB1BEA /* Configurable.swift in Sources */,
 				5AB2BDF228424464003FF4E9 /* TestVC.swift in Sources */,
