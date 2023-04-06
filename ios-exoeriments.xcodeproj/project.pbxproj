@@ -27,6 +27,9 @@
 		5A34335426D7A6A900241412 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A34335326D7A6A900241412 /* Preview Assets.xcassets */; };
 		5A34335726D7A6A900241412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A34335526D7A6A900241412 /* LaunchScreen.storyboard */; };
 		5A34336726D7A90400241412 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34336626D7A90400241412 /* ProfileEditViewController.swift */; };
+		5A80359029ADCEDA00D8667B /* HourTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80358F29ADCEDA00D8667B /* HourTimelineView.swift */; };
+		5A80359229ADCEEE00D8667B /* BodyClockCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80359129ADCEEE00D8667B /* BodyClockCardView.swift */; };
+		5A80359429ADD44A00D8667B /* TimelineBackgroundLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80359329ADD44A00D8667B /* TimelineBackgroundLineView.swift */; };
 		5AB2BDF02842445B003FF4E9 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2BDEF2842445B003FF4E9 /* TestView.swift */; };
 		5AB2BDF228424464003FF4E9 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2BDF128424464003FF4E9 /* TestVC.swift */; };
 		5AFA71EB27539C47008DF019 /* SmartListPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA71EA27539C47008DF019 /* SmartListPrototype.swift */; };
@@ -55,6 +58,9 @@
 		5A34335626D7A6A900241412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A34335826D7A6A900241412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A34336626D7A90400241412 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		5A80358F29ADCEDA00D8667B /* HourTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourTimelineView.swift; sourceTree = "<group>"; };
+		5A80359129ADCEEE00D8667B /* BodyClockCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyClockCardView.swift; sourceTree = "<group>"; };
+		5A80359329ADD44A00D8667B /* TimelineBackgroundLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackgroundLineView.swift; sourceTree = "<group>"; };
 		5AB2BDEF2842445B003FF4E9 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		5AB2BDF128424464003FF4E9 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		5AFA71EA27539C47008DF019 /* SmartListPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListPrototype.swift; sourceTree = "<group>"; };
@@ -144,6 +150,7 @@
 				5A008FAF28435BCD00DB1BEA /* ShowcaseVC.swift */,
 				5A008FC928435DA100DB1BEA /* Models */,
 				5A0A231726D7AE9D001C50AB /* UIColorPickers */,
+				5A80358E29ADCE9200D8667B /* BodyClockCard */,
 				5AFA71E927539C2E008DF019 /* SettingsList */,
 				5AB2BDEE28424446003FF4E9 /* SwiftUI+UIKit */,
 				5A008FCC284363AD00DB1BEA /* StickyHeader */,
@@ -179,6 +186,16 @@
 				5A34335826D7A6A900241412 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A80358E29ADCE9200D8667B /* BodyClockCard */ = {
+			isa = PBXGroup;
+			children = (
+				5A80359129ADCEEE00D8667B /* BodyClockCardView.swift */,
+				5A80358F29ADCEDA00D8667B /* HourTimelineView.swift */,
+				5A80359329ADD44A00D8667B /* TimelineBackgroundLineView.swift */,
+			);
+			path = BodyClockCard;
 			sourceTree = "<group>";
 		};
 		5AB2BDEE28424446003FF4E9 /* SwiftUI+UIKit */ = {
@@ -279,15 +296,18 @@
 				5A008FBE28435C3800DB1BEA /* UICollectionView+Ext.swift in Sources */,
 				5A008FCE284363BE00DB1BEA /* StickyHeaderVC.swift in Sources */,
 				5AB2BDF02842445B003FF4E9 /* TestView.swift in Sources */,
+				5A80359429ADD44A00D8667B /* TimelineBackgroundLineView.swift in Sources */,
 				5A008FC628435D2B00DB1BEA /* ViewController.swift in Sources */,
 				5A008FBD28435C3800DB1BEA /* LivePreview.swift in Sources */,
 				5A008FC228435C3800DB1BEA /* UIButton+Ext.swift in Sources */,
 				5AFA71EB27539C47008DF019 /* SmartListPrototype.swift in Sources */,
 				5A008FCB28435DC000DB1BEA /* ShowcaseFeature.swift in Sources */,
 				5A008FC828435D6700DB1BEA /* NavigationController.swift in Sources */,
+				5A80359029ADCEDA00D8667B /* HourTimelineView.swift in Sources */,
 				5A008FC028435C3800DB1BEA /* UIImage+Ext.swift in Sources */,
 				5A008FBC28435C3800DB1BEA /* Configurable.swift in Sources */,
 				5AB2BDF228424464003FF4E9 /* TestVC.swift in Sources */,
+				5A80359229ADCEEE00D8667B /* BodyClockCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
