@@ -21,7 +21,9 @@ final class TinderSwipeCard: UIView {
         ageLabel.text = String(profile.age)
         
         if let imageData = try? Data(contentsOf: profile.imageURL) {
-            imageView.image = UIImage(data: imageData)
+            DispatchQueue.main.async { [self] in
+                imageView.image = UIImage(data: imageData)
+            }
         }
     }
     
@@ -40,6 +42,7 @@ final class TinderSwipeCard: UIView {
     
     private let imageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.backgroundColor = .systemPink.withAlphaComponent(0.5)
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 10
@@ -49,21 +52,19 @@ final class TinderSwipeCard: UIView {
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
-        label.textColor = .black
         return label
     }()
     
     private let ageLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 20, weight: .medium)
-        label.textColor = .black
         return label
     }()
     
     private let bioLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
-        label.textColor = .darkGray
+        label.textColor = .secondaryLabel
         label.numberOfLines = 0
         return label
     }()

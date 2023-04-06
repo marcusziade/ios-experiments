@@ -14,14 +14,6 @@ final class TinderVC: ViewController {
         fetchProfiles { [unowned self] profiles in
             cardStackView.loadProfiles(profiles)
         }
-        
-//        let sampleProfiles = [
-//            Profile(name: "John", age: 28, bio: "I love traveling and exploring new places.", imageURL: URL(string: "https://shop-cdn.mozambiquehe.re/dl_store_s16_1_bund_pewterpairbonus_vk67.png")!),
-//            Profile(name: "Jane", age: 26, bio: "Coffee lover and food enthusiast.", imageURL: URL(string: "https://shop-cdn.mozambiquehe.re/dl_store_s16_1_bund_pewterpairbonus_vk67.png")!),
-//            Profile(name: "Mike", age: 29, bio: "Passionate about fitness and sports.", imageURL: URL(string: "https://shop-cdn.mozambiquehde.re/dl_store_s16_1_bund_pewterpairbonus_vk67.png")!)
-//        ]
-//
-//        cardStackView.loadProfiles(sampleProfiles)
     }
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
@@ -50,9 +42,7 @@ final class TinderVC: ViewController {
 extension TinderVC: CardStackViewDelegate {
     
     func cardStackView(_ cardStackView: TinderCardStackView, didSwipeCard card: TinderSwipeCard, isRightSwipe: Bool) {
-        // Perform custom actions in response to the swipe
-        let profile = card.getProfile() // Use this line if you have chosen Option 2
-        // let profile = card.profile // Use this line if you have chosen Option 1
+        let profile = card.getProfile()
         print("Swiped card: \(profile.name), right swipe: \(isRightSwipe)")
     }
 }
